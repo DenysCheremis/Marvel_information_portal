@@ -50,7 +50,7 @@ input::-webkit-inner-spin-button {
 .app {
     width: 1100px;
     margin: 0 auto;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
     position: relative;
     .bg-decoration {
         position: absolute;
@@ -84,4 +84,39 @@ main {
 .sticky{
     position: sticky;
     top: 10px;
+}
+
+@media (max-width: 1280px) {
+    .app{
+        width: 1000px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .app{
+        width: 730px;
+    }
+    main{
+        margin-top: 30px;
+    }
+    .sticky{
+        position: relative;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .app{
+        width: 460px;
+        padding: 20px 0;
+    }
+    main{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .app{
+        width: 300px;
+    }
 }

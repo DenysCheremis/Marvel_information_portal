@@ -29,3 +29,47 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+    .app{
+        &__title{
+            font-size: 22px;
+            line-height: 24px;
+        }
+        &__menu {
+            ul {
+                font-size: 22px;
+                line-height: 24px;
+                li {
+                    margin: 0 8px;
+                    a:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .app{
+        &__title{
+            font-size: 18px;
+            line-height: 20px;
+        }
+        &__menu {
+            display: flex;
+            align-items: center;
+            ul {
+                font-size: 18px;
+                line-height: 20px;
+                li {
+                    margin: 0 8px;
+                    a:hover {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+}

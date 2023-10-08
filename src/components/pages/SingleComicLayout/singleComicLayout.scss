@@ -8,7 +8,6 @@
     align-items: start;
     &__img {
         width: 293px;
-        height: 450px;
     }
     &__name {
         font-weight: bold;
@@ -34,6 +33,75 @@
         line-height: 24px;
         &:hover {
             color: $main-color;
+        }
+    }
+}
+
+@media (max-width: 1280px) {
+    .single-comic{
+        grid-template-columns: 285px 370px auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .single-comic{
+        grid-template-columns: 250px 345px auto;
+        column-gap: 30px;
+        &__img {
+            width: 250px;
+        }
+        &__name {
+            font-size: 20px;
+            line-height: 29px;
+        }
+        &__descr {
+            font-size: 17px;
+            line-height: 22px;
+        }
+        &__price {
+            font-size: 22px;
+        }
+        &__back {
+            font-size: 17px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .single-comic{
+        grid-template-columns: 150px 279px;
+        column-gap: 30px;
+        &__img {
+            width: 150px;
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__descr {
+            margin-top: 17px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__price {
+            font-size: 16px;
+        }
+        &__back {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .single-comic{
+        display: flex;
+        flex-direction: column;
+        &__img {
+            margin: 0 auto;
+            width: 240px;
+        }
+        &__info{
+            margin-top: 20px;
         }
     }
 }

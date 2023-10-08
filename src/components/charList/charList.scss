@@ -19,7 +19,7 @@
         height: 318px;
         background-color: $dark;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, .25);
-        padding: 15px;
+        padding: 15px 0px 0px 15px;
         cursor: pointer;
         transition: 0.3s transform;
         img {
@@ -39,5 +39,113 @@
         line-height: 29px;
         text-transform: uppercase;
         color: #fff;
+    }
+}
+
+@media (max-width: 1280px) {
+    .char {
+        &__content {
+            margin-top: 40px;
+            grid-template-columns: 600px 375px;
+        }
+        &__grid {
+            column-gap: 15px;
+            row-gap: 20px;
+            grid-template-columns: repeat(3, 190px);
+        }
+        &__item {
+            width: 190px;
+            height: 300px;
+            img {
+                width: 190px;
+                height: 190px;
+            }
+        }
+        &__name {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .char {
+        &__content {
+            margin-top: 40px;
+            grid-template-columns: 395px 309px;
+        }
+        &__grid {
+            column-gap: 15px;
+            row-gap: 20px;
+            grid-template-columns: repeat(2, 190px);
+        }
+        &__item {
+            width: 190px;
+            height: 300px;
+            img {
+                width: 190px;
+                height: 190px;
+            }
+        }
+        &__name {
+            font-size: 20px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .char {
+        &__content {
+            margin-top: 30px;
+            grid-template-columns: 234px 210px;
+            column-gap: 15px;
+        }
+        &__grid {
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: repeat(2, 112px);
+        }
+        &__item {
+            width: 112px;
+            height: 170px;
+            img {
+                width: 112px;
+                height: 112px;
+            }
+        }
+        &__name {
+            font-size: 12px;
+            line-height: 13px;
+            margin: -12px 0 0 -8px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .char {
+        &__content {
+            margin-top: 30px;
+            grid-template-columns: 150px 135px;
+            column-gap: 15px;
+        }
+        &__grid {
+            column-gap: 10px;
+            row-gap: 10px;
+            grid-template-columns: repeat(2, 70px);
+        }
+        &__item {
+            width: 70px;
+            height: 130px;
+            img {
+                width: 70px;
+                height: 70px;
+            }
+        }
+        &__name {
+            font-size: 8px;
+            line-height: 11px;
+            margin: -12px 0 0 -8px;
+        }
     }
 }
