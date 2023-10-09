@@ -1,6 +1,8 @@
+import './spinner.scss'
+
 const Spinner = () => {
     return(
-        <svg style={{ margin: 'auto', background: 'rgb(255, 255, 255)', display: 'block' }} width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+        <svg className='spinner' viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
             <g transform="rotate(0 50 50)">
                 <rect x="45" y="25" rx="5" ry="5" width="10" height="10" fill="#9f0013">
                     <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="1s" begin="-0.8888888888888888s" repeatCount="indefinite" />

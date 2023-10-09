@@ -126,20 +126,21 @@
     .char {
         &__content {
             margin-top: 30px;
-            grid-template-columns: 150px 135px;
+            grid-template-columns: 184px 150px;
             column-gap: 15px;
         }
         &__grid {
-            column-gap: 10px;
-            row-gap: 10px;
-            grid-template-columns: repeat(2, 70px);
+            column-gap: 15px;
+            row-gap: 15px;
+            grid-template-columns: repeat(2, 85px);
         }
         &__item {
-            width: 70px;
+            padding: 15px 15px 0 15px;
+            width: 85px;
             height: 130px;
             img {
-                width: 70px;
-                height: 70px;
+                width: 85px;
+                height: 85px;
             }
         }
         &__name {

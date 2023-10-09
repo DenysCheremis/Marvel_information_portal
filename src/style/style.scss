@@ -81,11 +81,6 @@ main {
     }
 }
 
-.sticky{
-    position: sticky;
-    top: 10px;
-}
-
 @media (max-width: 1280px) {
     .app{
         width: 1000px;
@@ -117,6 +112,6 @@ main {
 
 @media (max-width: 460px) {
     .app{
-        width: 300px;
+        width: 350px;
     }
 }
